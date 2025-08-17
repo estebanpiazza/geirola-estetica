@@ -738,3 +738,261 @@ footer {
         height: 130px;
     }
 }
+
+/* Estilos para la sección Equipo */
+.equipo {
+    padding: 80px 48px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+    text-align: center;
+}
+
+.equipo h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #f5f5f5 0%, #c0c0c0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.equipo-intro {
+    font-size: 1.2rem;
+    margin-bottom: 60px;
+    color: #b0b0b0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.equipo-miembros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.miembro {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.miembro:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.miembro-foto {
+    margin-bottom: 20px;
+}
+
+.miembro-foto img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.miembro:hover .miembro-foto img {
+    border-color: #f5f5f5;
+    box-shadow: 0 10px 20px rgba(245, 245, 245, 0.2);
+}
+
+.miembro-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f5f5f5;
+}
+
+.miembro-especialidad {
+    font-size: 1rem;
+    color: #b0b0b0;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.miembro-info p {
+    color: #d0d0d0;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.miembro-red-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #f5f5f5 0%, #c0c0c0 100%);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.miembro-red-social:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(245, 245, 245, 0.3);
+}
+
+.miembro-red-social .social-icon {
+    width: 20px;
+    height: 20px;
+    fill: #181818;
+}
+
+/* Estilos para la sección Testimonios */
+.testimonios {
+    padding: 80px 48px;
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+    text-align: center;
+}
+
+.testimonios h2 {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    background: linear-gradient(135deg, #f5f5f5 0%, #c0c0c0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.testimonios-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonio {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.testimonio:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.testimonio-foto {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonio-foto img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.testimonio-texto {
+    font-size: 1.1rem;
+    color: #d0d0d0;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-style: italic;
+    position: relative;
+}
+
+.testimonio-texto::before {
+    content: '"';
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.testimonio-autor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 15px;
+}
+
+.testimonio-autor h4 {
+    margin: 0;
+    color: #f5f5f5;
+    font-size: 1.1rem;
+}
+
+.testimonio-red-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(135deg, #f5f5f5 0%, #c0c0c0 100%);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.testimonio-red-social:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(245, 245, 245, 0.3);
+}
+
+.testimonio-red-social .social-icon {
+    width: 18px;
+    height: 18px;
+    fill: #181818;
+}
+
+/* Media queries para las nuevas secciones */
+@media (max-width: 700px) {
+    .equipo, .testimonios {
+        padding: 60px 16px;
+    }
+    
+    .equipo h2, .testimonios h2 {
+        font-size: 2rem;
+    }
+    
+    .equipo-miembros, .testimonios-lista {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .miembro, .testimonio {
+        padding: 25px;
+    }
+    
+    .miembro-foto img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .testimonio-foto img {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .testimonio-texto {
+        font-size: 1rem;
+    }
+    
+    .equipo-intro {
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+    }
+}
